@@ -1,1 +1,126 @@
+/*Глобальные стили*/
+.visually-hidden {
+
+}
+
+.button {
+  padding: 10px 20px;
+  color: #fefefe;
+  size: 18px;
+  line-height: 24px;
+  border: none;
+  border-radius: 15px;
+  /*box-shadow: 0 2px 0 0 rgba(172, 16, 0, 0.64);*/
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1140px;
+}
+
 /*Стили для Body*/
+body {
+  min-width: 1200px;
+  margin: 0;
+  background-color: #849d8f;
+}
+
+.body-main {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  margin: 0 auto;
+}
+
+.body-main input {
+  display: none;
+}
+/*Шапка сайта*/
+.header-main {
+  display: flex;
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
+}
+
+.header-main .container {
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+.header-main__navigation-block {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+}
+
+.header-main__logo {
+  margin-right: 20px;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu__item {
+  margin-right: 30px;
+}
+
+.main-menu__list {
+  display: none;
+}
+
+
+/*Основной контент*/
+
+.main-content {
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+}
+
+.promo-block__list {
+  display: flex;
+}
+
+.popular {
+  
+}
+
+.popular__list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages {
+  /*margin: 0;*/
+  /*padding: 20px;*/
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.advantages__item {
+  width: 485px;
+  margin-bottom: 20px;
+  padding-left: 55px;
+}
+
+.contacts {
+  width: 1200px;
+  padding: 0;
+}
+
+.footer-main {
+  display: flex;
+
+}
