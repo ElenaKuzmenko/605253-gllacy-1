@@ -30,33 +30,25 @@ body {
 }
 
 .body-main {
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  margin: 0 auto;
+  
 }
 
-.body-main input {
+.body-main > input {
   display: none;
 }
 /*Шапка сайта*/
 .header-main {
   display: flex;
-  /*flex-direction: column;*/
-  /*justify-content: space-between;*/
+
 }
 
-.header-main .container {
-  /*display: flex;
-  flex-direction: column;*/
-}
-
-.header-main__navigation-block {
+.navigation {
   display: flex;
   justify-content: flex-start;
   margin-right: auto;
 }
 
-.header-main__logo {
+.logo {
   margin-right: 20px;
 }
 
@@ -123,4 +115,47 @@ body {
 .footer-main {
   display: flex;
 
+}
+
+
+/*Страница каталога*/
+
+.inner-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+
+.filter__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter__list {
+  display: flex;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products__item {
+  width: 267px;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
 }
