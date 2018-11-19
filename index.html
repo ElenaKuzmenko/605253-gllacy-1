@@ -6,9 +6,9 @@
 </head>
 <body class="body-main">
 
-  <input type="radio" name="slide-control" id="1slide" checked>1
-  <input type="radio" name="slide-control" id="2slide">2
-  <input type="radio" name="slide-control" id="3slide">3
+  <input type="radio" name="slide-control" id="1slide" checked>
+  <input type="radio" name="slide-control" id="2slide">
+  <input type="radio" name="slide-control" id="3slide">
 
   <header class="header-main">
     <nav class="header-main__navigation-block">
@@ -47,7 +47,7 @@
     <p class="header-main__search-block search">
       <form method="get">
         <input class="search__field" type="search">
-        <button class="search__button" type="submit">Поиск</button>
+        <input class="search__button" type="submit" value="Поиск">
       </form>
     </p>
     <ul class="header-main__user-block user-menu">
@@ -69,17 +69,22 @@
   <main class="main-content">
     <h1 class="visually-hidden">Интернет магазин мороженного Глейси</h1>
     <section class="main-content__slider slider">
+      <div class="slider__controls">
+        <button class="slider__control slider__control--active" type="button">1</button>
+        <button class="slider__control" type="button">2</button>
+        <button class="slider__control" type="button">3</button>
+      </div>
       <ul class="slider__list">
         <li class="slider__item">
-          <img src="img/Мороженко 1.png" alt="slide1 picture" width="1079" height="845">
+          <img src="img/Icecream-1.png" alt="slide1 picture" width="1079" height="845">
           <a class="button" href="#">Дайте оба!</a>
         </li>
         <li class="slider__item">
-          <img src="img/Мороженко 2.png" alt="slide1 picture" width="1079" height="845">
+          <img src="img/Icecream-2.png" alt="slide1 picture" width="1079" height="845">
           <a class="button" href="#">Дайте оба!</a>
         </li>
         <li class="slider__item">
-          <img src="img/Мороженко 3.png" alt="slide1 picture" width="1079" height="845">
+          <img src="img/Icecream-3.png" alt="slide1 picture" width="1079" height="845">
           <a class="button" href="#">Дайте оба!</a>
         </li>
       </ul>
@@ -112,6 +117,7 @@
           <p class="popular__description">
             Сливочное с апельсиновым джемом и цитрусовой стружкой
           </p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </li>
         <li class="popular__item">
           <img src="http://placehold.it/267x267" alt="" width="267" height="267">
@@ -121,6 +127,7 @@
           <p class="popular__description">
             Сливочно-кофейное с кусочками шоколада
           </p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </li>
         <li class="popular__item">
           <img src="http://placehold.it/267x267" alt="" width="267" height="267">
@@ -130,6 +137,7 @@
           <p class="popular__description">
             Сливочно-клубничное с присыпкой из белого шоколада
           </p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </li>
         <li class="popular__item">
           <img src="http://placehold.it/267x267" alt="" width="267" height="267">
@@ -139,6 +147,7 @@
           <p class="popular__description">
             Сливочное крем-брюле с карамельной подливкой
           </p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </li>
       </ul>
     </section>
@@ -170,7 +179,7 @@
       </p>
       <form method="get">
         <input type="email" placeholder="электронная почта">
-        <button type="submit">Отправить</button>
+        <input class="button" type="submit" value="Отправить">
       </form>
     </section>
     <section class="main-content__contacts contacts">
@@ -229,6 +238,27 @@
       <p class="htmlacademy__copyright">Сделано в HTML Academy © 2017</p>
     </section>
   </footer>
+
+    <section class="modal-login">
+    <form class="login" action="get">
+      <input class="login__input" type="email" placeholder="Электронная почта" id="login-email">
+      <input class="login__input" type="password" placeholder="Пароль">
+      <input class="button" type="submit" value="Войти">
+    </form>
+    <a href="#">Забыли пароль?</a>
+    <a href="#">Новая регистрация</a>
+  </section>
+
+  <section class="modal-feedback">
+    <h2 class="modal-feedback__title">Мы обязательно вам ответим!</h2>
+    <form class="feedback" action="get">
+      <input type="text" placeholder="Как вас зовут?">
+      <input type="email" placeholder="Ваша почта для ответа?">
+      <textarea type="textarea" placeholder="Напишите что-нибудь..." rows="5" cols="100"></textarea>
+      <input class="button" type="submit" value="Отправить">
+    </form>
+    <button class="modal-feedback__close" type="button">Close</button>
+  </section>
 
 </body>
 </html>

@@ -16,7 +16,7 @@
           <a class="main-menu__link" href="#">Каталог</a>
           <ul class="main-menu__list catalog-list">
             <li class="catalog-list__item catalog-list__item--title">
-              Новинки
+              <a class="catalog-list__link catalog-list__link--new" href="#">Новинки</a>
             </li>
             <li class="catalog-list__item">
               <a class="catalog-list__link" href="№">Сливочное</a>
@@ -43,7 +43,7 @@
     <p class="header-main__search-block search">
       <form method="get">
         <input class="search__field" type="search">
-        <button class="search__button" type="submit">Поиск</button>
+        <input class="search__button" type="submit" value="Поиск">
       </form>
     </p>
     <ul class="header-main__user-block user-menu">
@@ -64,11 +64,84 @@
 
   <main class="main-content">
     <div class="breadcrumbs">
-      
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Каталог</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Сливочное</a>
+        </li>
+      </ul>
     </div>
     <h1 class="inner__title">Сливочное мороженое</h1>
     <section class="filter">
-      
+      <form class="filter__form" method="post">
+        
+          <div class="filter__sort">
+            <p class="filter__title">Сортировка:</p>
+            <select name="filter__sort-list" id="sort-list">
+              <option class="filter__selection" value="by-popularity">по популярности</option>
+              <option class="filter__selection" value="cheap-first">сначала недорогие</option>
+              <option class="filter__selection" value="expensive-first">сначала дорогие</option>
+              <option class="filter__selection" value="by-fat-content">по жирности</option>
+            </select>
+          </div>
+          <div class="filter__price">
+            <p class="filter__title">Цена: 100 руб. – 500 руб.</p>
+            
+          </div>
+          <div class="filter__fat-content">
+            <p class="filter__title">Жирность:</p>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="filter__radio" type="radio" name="fat-content" value="0%" id="fat-0">
+                <label for="fat-0">0%</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__radio filter__radio--current" type="radio" name="fat-content" value="до 10%" id="fat-10" checked>
+                <label for="fat-10">до 10%</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__radio" type="radio" name="fat-content" value="до 30%" id="fat-30">
+                <label for="fat-30">до 30%</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__radio" type="radio" name="fat-content" value="больше 30%" id="fat30+">
+                <label for="fat30+">больше 30%</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__fillers">
+            <p class="filter__title">Наполнители:</p>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="filter__checkbox filter__checkbox--current" type="checkbox" name="chokolate" id="chokolate" checked>
+                <label for="chokolate">шоколадные</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__checkbox filter__checkbox--current" type="checkbox" name="sugar" id="sugar" checked>
+                <label for="sugar">сахарные присыпки</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__checkbox" type="checkbox" name="fruit" id="fruit">
+                <label for="fruit">фрукты</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__checkbox" type="checkbox" name="syryp" id="syryp">
+                <label for="syryp">сиропы</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__checkbox" type="checkbox" name="jam" id="jam">
+                <label for="jam">джемы</label>
+              </li>
+            </ul>
+          </div>
+        
+        <input type="submit" value="Применить">
+      </form>
     </section>
     <section class="products">
       <ul class="products__list">
@@ -195,11 +268,12 @@
       </ul>
     </section>
     <ul class="pagination">
-      <li class="pagination__item pagination__item--current">1</li>
-      <li class="pagination__item">2</li>
-      <li class="pagination__item">3</li>
-      <li class="pagination__item">4</li>
-      <li class="pagination__item">5</li>
+      <li class="pagination__item pagination__item--current"><a>1</a></li>
+      <li class="pagination__item"><a href="#">2</a></li>
+      <li class="pagination__item"><a href="#">3</a></li>
+      <li class="pagination__item"><a href="#">4</a></li>
+      <li class="pagination__item"><a href="#">5</a></li>
+      <li class="pagination__item"><a href="#">></a></li>
     </ul>
   </main>
 
@@ -243,5 +317,6 @@
       <p class="htmlacademy__copyright">Сделано в HTML Academy © 2017</p>
     </section>
   </footer>
+
 </body>
 </html>
