@@ -18,8 +18,8 @@
 
 .container {
   margin: 0 auto;
-  padding: 0 30px;
-  width: 1140px;
+/*  padding: 0 30px;*/
+  width: 1200px;
 }
 
 /*Стили для Body*/
@@ -29,6 +29,8 @@ body {
   background-color: #849d8f;
 }
 
+                              /*Главная страница*/
+
 .body-main {
   
 }
@@ -36,11 +38,15 @@ body {
 .body-main > input {
   display: none;
 }
-/*Шапка сайта*/
+              /*Шапка сайта*/
+
+                              /*Блок .header-main*/
+
 .header-main {
   display: flex;
-
 }
+
+                              /*Блок .navigation*/
 
 .navigation {
   display: flex;
@@ -48,9 +54,13 @@ body {
   margin-right: auto;
 }
 
+                              /*Блок .logo*/
+
 .logo {
   margin-right: 20px;
 }
+
+                              /*Блок .main-menu*/
 
 .main-menu {
   display: flex;
@@ -68,8 +78,17 @@ body {
   display: none;
 }
 
+                              /*Блок .search*/
 
-/*Основной контент*/
+                              /*Блок .user-menu*/
+
+                              /*Блок .cart*/
+
+                              /*Блок .info-block*/
+
+
+
+              /*Основной контент*/
 
 .main-content {
   display: flex;
@@ -77,21 +96,50 @@ body {
   flex-wrap: wrap;
 }
 
-.promo-block__list {
-  display: flex;
+                              /*Блок .slider*/
+
+.slider {
+  padding: 0 30px;
 }
 
+                              /*Блок .promo-block*/
+
+.promo-block {
+  padding: 0 30px;
+  min-width: 1140px;
+}
+
+.promo-block__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-block__item {
+  width: 560px;
+}
+
+                              /*Блок .popular*/
+
 .popular {
-  
+  padding: 0 30px;
+  width: 1140px;
 }
 
 .popular__list {
   display: flex;
   justify-content: space-between;
 }
+
+.popular__item {
+  width: 267px;
+}
+
+                              /*Блок .advantages*/
+
 .advantages {
   /*margin: 0;*/
   /*padding: 20px;*/
+  padding: 0 30px;
 }
 
 .advantages__list {
@@ -107,18 +155,39 @@ body {
   padding-left: 55px;
 }
 
+                              /*Блок .blog*/
+
+
+                              /*Блок .subscribe*/
+
+.subscribe {
+  width: 560px;
+}
+
+                              /*Блок .contacts*/
+
 .contacts {
   width: 1200px;
   padding: 0;
 }
+
+              /*подвал*/
+
+                              /*Блок .footer-main*/
 
 .footer-main {
   display: flex;
 
 }
 
+                              /*Блок .social-block*/
 
-/*Страница каталога*/
+                              /*Блок .footer-info*/
+
+                              /*Блок .htmlacademy*/
+
+
+            /*Страница каталога*/
 
 .inner-content {
   display: flex;
@@ -126,9 +195,13 @@ body {
   flex-direction: column;
 }
 
+                              /*Блок .breadcrumbs*/
+
 .breadcrumbs__list {
   display: flex;
 }
+
+                              /*Блок .filter*/
 
 .filter__form {
   display: flex;
@@ -138,6 +211,8 @@ body {
 .filter__list {
   display: flex;
 }
+
+                              /*Блок .products*/
 
 .products__list {
   display: flex;
@@ -151,6 +226,8 @@ body {
 .products__item {
   width: 267px;
 }
+
+                              /*Блок .pagination*/
 
 .pagination {
   margin: 0;

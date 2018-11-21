@@ -42,18 +42,65 @@
       </ul>
     </nav>
     <div class="search">
+      <a class="search__button" href="#">Поиск</a>
       <form method="get">
-        <input class="search__field" type="search">
-        <input class="search__button button" type="submit" value="Поиск">
+        <input class="search__field" type="search" placeholder="Что ищем?">
       </form>
     </div>
     <ul class="user-menu">
       <li class="user-menu__item user-menu__item--login">
         <a class="user-menu__link" href="#">Вход</a>
+        <section class="modal-login">
+          <form class="login" action="1" method="post">
+            <input class="login__input" type="email" placeholder="Электронная почта" id=  "login-email">
+            <input class="login__input" type="password" placeholder="Пароль">
+            <input class="button" type="submit" value="Войти">
+          </form>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </section>
       </li>
     </ul>
     <div class="cart">
       <a class="cart__link--filled" href="#">2 товара</a>
+      <table class="cart__items">
+        <tr class="cart__item">
+          <td class="cart__remove-btn">
+            <button type="button">remove</button>
+          </td>
+          <td class="cart__item-img">
+            <img src="img/cart-item1.png" alt="Пломбир с апельсиновым джемом " width="33" height="33">
+          </td>
+          <td class="cart__item-name">
+            Пломбир с апельсиновым джемом
+          </td>
+          <td class="cart__item-amount">
+            1,5 кг х <span>200 руб.</span>
+          </td>
+          <td class="cart__item-price">
+            300 руб.
+          </td>
+        </tr>
+        <tr class="cart__item">
+          <td class="cart__remove-btn">
+            <button type="button">remove</button>
+          </td>
+          <td class="cart__item-img">
+            <img src="img/cart-item2.png" alt="Клубничный пломбир с присыпкой  из белого шоколада" width="33" height="33">
+          </td>
+          <td class="cart__item-name">
+            Клубничный пломбир с присыпкой  из белого шоколада
+          </td>
+          <td class="cart__item-amount">
+            1,5 кг х <span>300 руб.</span>
+          </td>
+          <td class="cart__item-price">
+            450 руб.
+          </td>
+        </tr>
+      </table>
+      <p class="cart__total-price">Итого: 750 руб.</p>
+      <button class="button cart__order-btn" type="submit">Оформить заказ</button>
     </div>
     <p class="info-block">
       С 10 до 20, ежедневно
@@ -148,7 +195,7 @@
       <ul class="products__list">
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
           </a>
           <p class="product__price">310 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -158,7 +205,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-kofe-chokol.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           </a>
           <p class="product__price">380 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -168,7 +215,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-straw-choko-white.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           </a>
           <p class="product__price">355 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -178,7 +225,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-creme-brule-karamel.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           </a>
           <p class="product__price">415 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -188,7 +235,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-ingonberry-jam.png" alt="Сливочное с брусничным джемом" width="267" height="267">
           </a>
           <p class="product__price">325 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -198,7 +245,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-blueberry.png" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
           </a>
           <p class="product__price">410 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -208,7 +255,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-lemon-karamel.png" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
           </a>
           <p class="product__price">375 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -218,7 +265,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-chokol.png" alt="Сливочное с шоколадной стружкой" width="267" height="267">
           </a>
           <p class="product__price">320 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -228,7 +275,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-vanile.png" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
           </a>
           <p class="product__price">440 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -238,7 +285,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-menthol.png" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
           </a>
           <p class="product__price">435 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -248,7 +295,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-chokol-piece.png" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
           </a>
           <p class="product__price">355 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -258,7 +305,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="product1.html">
-            <img class="product__image" src="http://placehold.it/267x267" alt="">
+            <img class="product__image" src="img/icecream-mint.png" alt="Сливочное с мятным сиропом" width="267" height="267">
           </a>
           <p class="product__price">420 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -268,14 +315,17 @@
         </li>
       </ul>
     </section>
-    <ul class="pagination">
-      <li class="pagination__item pagination__item--current"><a>1</a></li>
-      <li class="pagination__item"><a href="#">2</a></li>
-      <li class="pagination__item"><a href="#">3</a></li>
-      <li class="pagination__item"><a href="#">4</a></li>
-      <li class="pagination__item"><a href="#">5</a></li>
-      <li class="pagination__item"><a href="#">></a></li>
-    </ul>
+    <div class="pagination">
+      <button class="pagination__button pagination__button--left">$lt</button>
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item--current"><a>1</a></li>
+          <li class="pagination__item"><a href="#">2</a></li>
+          <li class="pagination__item"><a href="#">3</a></li>
+          <li class="pagination__item"><a href="#">4</a></li>
+          <li class="pagination__item"><a href="#">5</a></li>
+        </ul>
+        <button class="pagination__button pagination__button--right">$rt</button>
+      </div>
   </main>
 
   <footer class="footer-main container">

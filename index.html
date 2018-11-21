@@ -15,7 +15,7 @@
   <header class="header-main container">
     <nav class="navigation">
       <a class="logo">
-        <img class="logo__image" src="http://placehold.it/154x64" alt="logo Gllacy" width="154" height="64">
+        <img class="logo__image" src="img/Logo.svg" alt="logo Gllacy" width="154" height="64">
       </a>
       <ul class="main-menu">
         <li class="main-menu__item">
@@ -47,14 +47,23 @@
       </ul>
     </nav>
     <div class="search">
+      <a class="search__button" href="#">Поиск</a>
       <form method="get">
-        <input class="search__field" type="search">
-        <input class="search__button button" type="submit" value="Поиск">
+        <input class="search__field" type="search" placeholder="Что ищем?">
       </form>
     </div>
     <ul class="user-menu">
       <li class="user-menu__item user-menu__item--login">
         <a class="user-menu__link" href="#">Вход</a>
+        <section class="modal-login">
+          <form class="login" action="get">
+            <input class="login__input" type="email" placeholder="Электронная почта" id=  "login-email">
+            <input class="login__input" type="password" placeholder="Пароль">
+            <input class="button" type="submit" value="Войти">
+          </form>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </section>
       </li>
     </ul>
     <div class="cart">
@@ -68,9 +77,9 @@
     </p>
   </header>
 
-  <main class="main-content">
+  <main class="main-content container">
     <h1 class="visually-hidden">Интернет магазин мороженного Глейси</h1>
-    <section class="slider container">
+    <section class="slider">
       <div class="slider__controls">
         <button class="slider__control slider__control--active" type="button">1</button>
         <button class="slider__control" type="button">2</button>
@@ -91,7 +100,7 @@
         </li>
       </ul>
     </section>
-    <section class="promo-block container">
+    <section class="promo-block">
       <h2 class="visually-hidden">Промо акции</h2>
       <ul class="promo-block__list">
         <li class="promo-block__item">
@@ -106,11 +115,11 @@
         </li>
       </ul>
     </section>
-    <section class="popular container">
+    <section class="popular">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular__list">
       <li class="popular__item">
-        <img src="http://placehold.it/267x267" alt="" width="267" height="267">
+        <img src="img/icecream-orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
         <p class="popular__price">
           310 ₽/<span>кг</span>
         </p>
@@ -120,7 +129,7 @@
         <a class="button" href="#">Быстрый просмотр</a>
       </li>
       <li class="popular__item">
-        <img src="http://placehold.it/267x267" alt="" width="267" height="267">
+        <img src="img/icecream-kofe-chokol.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
         <p class="popular__price">
           380 ₽/<span>кг</span>
         </p>
@@ -130,7 +139,7 @@
         <a class="button" href="#">Быстрый просмотр</a>
       </li>
       <li class="popular__item">
-        <img src="http://placehold.it/267x267" alt="" width="267" height="267">
+        <img src="img/icecream-straw-choko-white.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
         <p class="popular__price">
           355 ₽/<span>кг</span>
         </p>
@@ -140,7 +149,7 @@
         <a class="button" href="#">Быстрый просмотр</a>
       </li>
       <li class="popular__item">
-        <img src="http://placehold.it/267x267" alt="" width="267" height="267">
+        <img src="img/icecream-creme-brule-karamel.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
         <p class="popular__price">
           415 ₽/<span>кг</span>
         </p>
@@ -151,7 +160,7 @@
       </li>
       </ul>
     </section>
-    <section class="advantages container">
+    <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
@@ -171,11 +180,11 @@
         </ul>
       </div>
     </section>
-    <article class="blog-article container">
+    <article class="blog">
       <p>Новое в нашем блоге</p>
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
-    <section class="subscribe container">
+    <section class="subscribe">
       <p class="subscribe__description">
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого   вкусного, что у нас происходит. Обещаем не спамить и не слать всякой  ненужной ерунды. Честно =) 
       </p>
@@ -184,7 +193,7 @@
         <input class="button" type="submit" value="Отправить">
       </form>
     </section>
-    <section class="container contacts">
+    <section class="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
       <img class="contacts__map" src="http://placehold.it/1200x430" alt="карта">
       <p class="contacts__adress">
@@ -213,7 +222,7 @@
           <a class="social-block__link social-block__link--facebook" href="#">  Facebook</a>
         </li>
         <li class="social-block__item">
-          <a class="social-block__link social-block__link--vk" href="#"><<VKontakte>  </VKontakte>></VKontakte></a>
+          <a class="social-block__link social-block__link--vk" href="#">VKontakte</a>
         </li>
       </ul>
     </section>
@@ -241,22 +250,14 @@
     </section>
   </footer>
 
-  <section class="modal-login">
-    <form class="login" action="get">
-      <input class="login__input" type="email" placeholder="Электронная почта" id=  "login-email">
-      <input class="login__input" type="password" placeholder="Пароль">
-      <input class="button" type="submit" value="Войти">
-    </form>
-    <a href="#">Забыли пароль?</a>
-    <a href="#">Новая регистрация</a>
-  </section>
+  
   
   <section class="modal-feedback">
     <h2 class="modal-feedback__title">Мы обязательно вам ответим!</h2>
     <form class="feedback" action="get">
       <input type="text" placeholder="Как вас зовут?">
       <input type="email" placeholder="Ваша почта для ответа?">
-      <textarea type="textarea" placeholder="Напишите что-нибудь..." rows="5" < cols></cols>="100"></textarea>
+      <textarea placeholder="Напишите что-нибудь..." rows="5" cols="100"></textarea>
       <input class="button" type="submit" value="Отправить">
     </form>
     <button class="modal-feedback__close" type="button">Close</button>
