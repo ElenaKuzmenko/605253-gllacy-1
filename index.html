@@ -8,21 +8,21 @@
 </head>
 <body class="body-main">
 
-  <input type="radio" name="slide-control" id="1slide" checked>
-  <input type="radio" name="slide-control" id="2slide">
-  <input type="radio" name="slide-control" id="3slide">
+  <input type="radio" name="slide-control" id="slide1" checked>
+  <input type="radio" name="slide-control" id="slide2">
+  <input type="radio" name="slide-control" id="slide3">
 
   <header class="header-main container">
     <nav class="navigation">
       <a class="logo">
-        <img class="logo__image" src="img/Logo.svg" alt="logo Gllacy" width="154" height="64">
+        <img class="logo__image" src="img/Logo.svg" alt="Магазин мороженого Gllacy" width="154" height="64">
       </a>
       <ul class="main-menu">
         <li class="main-menu__item">
           <a class="main-menu__link" href="catalog.html">Каталог</a>
           <ul class="main-menu__list catalog-list">
-            <li class="catalog-list__item catalog-list__item--title">
-              Новинки
+            <li class="catalog-list__item catalog-list__item--new">
+              <a class="catalog-list__link" href="#">Новинки</a>
             </li>
             <li class="catalog-list__item">
               <a class="catalog-list__link" href="№">Сливочное</a>
@@ -48,22 +48,10 @@
     </nav>
     <div class="search">
       <a class="search__button" href="#">Поиск</a>
-      <form method="get">
-        <input class="search__field" type="search" placeholder="Что ищем?">
-      </form>
     </div>
     <ul class="user-menu">
       <li class="user-menu__item user-menu__item--login">
         <a class="user-menu__link" href="#">Вход</a>
-        <section class="modal-login">
-          <form class="login" action="get">
-            <input class="login__input" type="email" placeholder="Электронная почта" id=  "login-email">
-            <input class="login__input" type="password" placeholder="Пароль">
-            <input class="button" type="submit" value="Войти">
-          </form>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </section>
       </li>
     </ul>
     <div class="cart">
@@ -78,7 +66,7 @@
   </header>
 
   <main class="main-content container">
-    <h1 class="visually-hidden">Интернет магазин мороженного Глейси</h1>
+    <h1 class="visually-hidden">Интернет магазин мороженого Gllacy</h1>
     <section class="slider">
       <div class="slider__controls">
         <button class="slider__control slider__control--active" type="button">1</button>
@@ -87,16 +75,25 @@
       </div>
       <ul class="slider__list">
         <li class="slider__item">
-          <img src="img/Icecream-1.png" alt="slide1 picture" width="1079" height="845">
-          <a class="button" href="#">Дайте оба!</a>
-        </li>
-        <li class="slider__item">
-          <img src="img/Icecream-2.png" alt="slide1 picture" width="1079" height="845">
-          <a class="button" href="#">Дайте оба!</a>
-        </li>
-        <li class="slider__item">
           <img src="img/Icecream-3.png" alt="slide1 picture" width="1079" height="845">
-          <a class="button" href="#">Дайте оба!</a>
+          <p class="slider__description">
+            Крем-брюле и пломбир с малиновым джемом
+          </p>
+          <a class="button slider__button" href="#">Дайте оба!</a>
+        </li>
+        <li class="slider__item">
+          <img src="img/Icecream-2.png" alt="slide2 picture" width="1079" height="845">
+          <p class="slider__description">
+            Шоколадный пломбир и лимонный сорбет
+          </p>
+          <a class="button slider__button" href="#">Дайте оба!</a>
+        </li>
+        <li class="slider__item">
+          <img src="img/Icecream-1.png" alt="slide3 picture" width="1079" height="845">
+          <p class="slider__description">
+            Пломбир с помадкой и клубничный щербет
+          </p>
+          <a class="button slider__button" href="#">Дайте оба!</a>
         </li>
       </ul>
     </section>
@@ -119,7 +116,7 @@
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular__list">
       <li class="popular__item">
-        <img src="img/icecream-orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+        <img src="img/icecream-orange.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
         <p class="popular__price">
           310 ₽/<span>кг</span>
         </p>
@@ -129,7 +126,7 @@
         <a class="button" href="#">Быстрый просмотр</a>
       </li>
       <li class="popular__item">
-        <img src="img/icecream-kofe-chokol.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+        <img src="img/icecream-kofe-chokol.png" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
         <p class="popular__price">
           380 ₽/<span>кг</span>
         </p>
@@ -139,7 +136,7 @@
         <a class="button" href="#">Быстрый просмотр</a>
       </li>
       <li class="popular__item">
-        <img src="img/icecream-straw-choko-white.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+        <img src="img/icecream-straw-choko-white.png" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267">
         <p class="popular__price">
           355 ₽/<span>кг</span>
         </p>
@@ -149,7 +146,7 @@
         <a class="button" href="#">Быстрый просмотр</a>
       </li>
       <li class="popular__item">
-        <img src="img/icecream-creme-brule-karamel.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+        <img src="img/icecream-creme-brule-karamel.png" alt="Сливочное мороженое крем-брюле с карамельной подливкой" width="267" height="267">
         <p class="popular__price">
           415 ₽/<span>кг</span>
         </p>
@@ -188,14 +185,14 @@
       <p class="subscribe__description">
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого   вкусного, что у нас происходит. Обещаем не спамить и не слать всякой  ненужной ерунды. Честно =) 
       </p>
-      <form method="get">
-        <input type="email" placeholder="электронная почта">
-        <input class="button" type="submit" value="Отправить">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="email" name="subscribe-email" placeholder="электронная почта">
+        <button class="button" type="submit">Отправить</button>
       </form>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <img class="contacts__map" src="http://placehold.it/1200x430" alt="карта">
+      <img class="contacts__map" src="img/map.jpg" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <p class="contacts__adress">
         Адрес главного офиса и офлайн-магазина:
         <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
@@ -229,36 +226,70 @@
     <section class="footer-info">
       <ul class="footer-info__list">
         <li class="footer-info__item">
-          <a href="#" class="footer-info__link footer-info__link--suppliers">Для  поставщиков</a>
+          <a class="footer-info__link footer-info__link--suppliers" href="#">Для  поставщиков</a>
         </li>
         <li class="footer-info__item">
-          <a href="#" class="footer-info__link">О производстве</a>
+          <a class="footer-info__link" href="#">О производстве</a>
         </li>
         <li class="footer-info__item">
-          <a href="#" class="footer-info__link">Наши документы</a>
+          <a class="footer-info__link" href="#">Наши документы</a>
         </li>
         <li class="footer-info__item">
-          <a href="#" class="footer-info__link">Экологические счтандарты</a>
+          <a class="footer-info__link" href="#">Экологические счтандарты</a>
         </li>
       </ul>
     </section>
     <section class="htmlacademy">
-      <a class="htmlacademy__logo" href="#">
-        <img class="htmlacademy__logo-image" src="http://placehold.it/108x39" alt=  "HTML Academy">
+      <a class="htmlacademy__logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="htmlacademy__logo-image" src="img/logo-htmlacademy-small.svg" alt="HTML Academy" width="120" height="38">
       </a>
       <p class="htmlacademy__copyright">Сделано в HTML Academy © 2017</p>
     </section>
   </footer>
 
-  
-  
+  <section class="modal-search">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden">
+        Поиск по сайту
+        <input class="search__field" type="search" name="search" placeholder="Что ищем?">
+      </label>
+    </form>
+  </section>
+
+  <section class="modal-login">
+    <form class="login" action="https://echo.htmlacademy.ru" method="post">
+      <p class="login__item">
+        <label class="visually-hidden" for="login-email">Электронная почта</label>
+        <input class="login__input" type="email" name="email" placeholder="Электронная почта" id="login-email">
+      </p>
+      <p class="login__item">
+        <label class="visually-hidden" for="login-password">Пароль</label>
+        <input class="login__input" type="password" name="password" placeholder="Пароль" id="login-password">
+      </p>
+      <button class="button" type="submit">Войти</button>
+      <p class="login__info">
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </p>
+    </form>
+  </section>
+
   <section class="modal-feedback">
     <h2 class="modal-feedback__title">Мы обязательно вам ответим!</h2>
-    <form class="feedback" action="get">
-      <input type="text" placeholder="Как вас зовут?">
-      <input type="email" placeholder="Ваша почта для ответа?">
-      <textarea placeholder="Напишите что-нибудь..." rows="5" cols="100"></textarea>
-      <input class="button" type="submit" value="Отправить">
+    <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+        <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+      </p>
+      <p>
+        <label class="visually-hidden" for="feedback-email">Ваша электронная почта</label>
+        <input type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
+      </p>
+      <p>
+        <label class="visually-hidden" for="feedback-message">Ваше сообщение</label>
+        <textarea name="message" id="feedback-message" placeholder="Напишите что-нибудь..." rows="5" cols="100"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
     </form>
     <button class="modal-feedback__close" type="button">Close</button>
   </section>
