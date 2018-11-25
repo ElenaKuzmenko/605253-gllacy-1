@@ -1,19 +1,10 @@
 /*Глобальные стили*/
 .visually-hidden {
-
-}
-
-.button {
-  padding: 10px 20px;
-  color: #fefefe;
-  size: 18px;
-  line-height: 24px;
-  border: none;
-  border-radius: 15px;
-  /*box-shadow: 0 2px 0 0 rgba(172, 16, 0, 0.64);*/
-  text-decoration: none;
-  outline: none;
-  background-color: transparent;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .container {
@@ -27,6 +18,30 @@ body {
   min-width: 1200px;
   margin: 0;
   background-color: #849d8f;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, sans-serif;
+  color: #ffffff;
+}
+/*Стили для кнопок*/
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+
+
+  /*height: 44px;*/
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
 }
 
                               /*Главная страница*/
