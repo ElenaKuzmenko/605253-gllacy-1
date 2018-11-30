@@ -124,7 +124,7 @@ body {
 }
 
 .header-wrapper {
-  padding: 0 30px;
+  padding: 0 27px;
   display: flex;
 }
 
@@ -140,7 +140,8 @@ body {
                               /*Блок .logo*/
 
 .logo {
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-top: 9px;
 }
 
                               /*Блок .main-menu*/
@@ -154,11 +155,46 @@ body {
 }
 
 .main-menu__item {
-  margin-right: 30px;
+
+
+}
+
+.main-menu__link {
+  display: block;
+  padding: 7px 14px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  color: #ffffff;
+}
+
+.main-menu__link--current {
+  color: #ffffff;
+  background-color: #d07058;
+  border-radius: 17px;
+}
+
+.main-menu__link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-menu__link:hover,
+.main-menu__link:focus {
+  background-color: rgb(247, 246, 243);
+  color: #323232;
+  border-radius: 17px;
+  outline: none;
+}
+
+.main-menu__link:active {
+  background-color: rgba(248, 247, 244, 0.988);
+  box-shadow: inset 0px 2px 1px 0px #696969;
+  color: #323232;
+  border-radius: 17px;
 }
 
 .main-menu__list {
@@ -166,6 +202,75 @@ body {
 }
 
                               /*Блок .search*/
+.search {
+  position: relative;
+  margin-left: auto;
+  margin-top: 23px;
+  margin-right: 10px;
+}
+
+.search form {
+  position: absolute;
+  bottom: -64px;
+  right: 0;
+  display: none;
+  width: 341px;
+  height: 84px;
+  border-radius: 6px;
+  background-color: rgb(248, 247, 244);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.search__field {
+  box-sizing: border-box;
+  margin: 20px 15px;
+  padding: 10px 15px;
+  width: 310px;
+  /*height: 44px;*/
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #d3d3d2;
+}
+
+.search__field::-webkit-input-placeholder {
+  color: #999999;
+}
+.search__field::-moz-placeholder          {
+  color: #999999;
+  }/* Firefox 19+ */
+.search__field:-moz-placeholder           {
+  color: #999999;
+  }/* Firefox 18- */
+.search__field:-ms-input-placeholder      {
+  color: #999999;
+}
+
+.search__button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url(../img/icon/magnifier.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search__button:hover,
+.search__button:focus {
+  background-color: #f8f7f4;
+  background-image: url(../img/icon/magnifier-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search__button:hover + form,
+.search__button:focus + form {
+  display: block;
+}
 
                               /*Блок .user-menu*/
 
@@ -173,21 +278,81 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 23px;
+  margin-right: 10px;
 }
 
 .user-menu__item {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
 }
 
+.user-menu__link {
+  position: relative;
+  display: block;
+  padding: 8px 16px 8px 44px;
+}
+
+.user-menu__link--login::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 17px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon/login.svg);
+}
+
+.user-menu__link--login:hover,
+.user-menu__link--login:focus {
+  background-color: #f8f7f4;
+  color: #323232;
+  border-radius: 18px;
+}
+
+.user-menu__link--login:hover::before,
+.user-menu__link--login:focus::before {
+  background-image: url(../img/icon/login-black.svg);
+}
+
+
                               /*Блок .cart*/
+.cart {
+  margin-top: 26px;
+}
 
 .cart__link {
+  position: relative;
+  padding: 8px 17px 8px 45px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
 }
+
+.cart__link::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 17px;
+  display: block;
+  width: 21px;
+  height: 20px;
+}
+
+.cart__link--empty::before {
+  background-image: url(../img/icon/cart.svg);
+}
+
+.cart__link--filled::before {
+  background-image: url(../img/icon/shopping-cart-filled.svg);
+}
+
 
                               /*Блок .info-block*/
 
@@ -195,6 +360,8 @@ body {
   align-self: flex-end;
   margin: 0;
   margin-left: auto;
+  margin-top: -7px;
+  padding-right: 27px;
   width: 220px;
   font-size: 14px;
   line-height: 16px;
@@ -204,7 +371,7 @@ body {
 
 .header-info__phone {
   font-size: 22px;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 
