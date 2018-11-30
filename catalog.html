@@ -7,57 +7,67 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body-inner">
-  <header class="header-main container">
-    <nav class="navigation">
-      <a class="logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/600x300" alt="Магазин мороженого Gllacy" width="154" height="64">
-      </a>
-      <ul class="main-menu">
-        <li class="main-menu__item main-menu__item--current">
-          <a class="main-menu__link" href="#">Каталог</a>
-          <ul class="main-menu__list catalog-list">
-            <li class="catalog-list__item catalog-list__item--new">
-              <a class="catalog-list__link" href="#">Новинки</a>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <nav class="navigation">
+          <a class="logo" href="index.html">
+            <img class="logo__image" src="img/Logo.svg" alt="Магазин мороженого Gllacy" width="154" height="64">
+          </a>
+          <ul class="main-menu">
+            <li class="main-menu__item main-menu__item--current">
+              <a class="main-menu__link" href="catalog.html">Каталог</a>
+              <ul class="main-menu__list catalog-list">
+                <li class="catalog-list__item catalog-list__item--new">
+                  <a class="catalog-list__link" href="#">Новинки</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">Сливочное</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">Щербеты</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">Мелорин</a>
+                </li>
+              </ul>
             </li>
-            <li class="catalog-list__item">
-              <a class="catalog-list__link" href="№">Сливочное</a>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Доставка и оплата</a>
             </li>
-            <li class="catalog-list__item">
-              <a class="catalog-list__link" href="№">Щербеты</a>
-            </li>
-            <li class="catalog-list__item">
-              <a class="catalog-list__link" href="№">Фруктовый лед</a>
-            </li>
-            <li class="catalog-list__item">
-              <a class="catalog-list__link" href="№">Мелорин</a>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">О Компании</a>
             </li>
           </ul>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">Доставка и оплата</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">О Компании</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="search">
-      <a class="search__button" href="#">Поиск</a>
+        </nav>
+        <div class="search">
+          <a class="search__button" href="#">Поиск</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="search">
+              Поиск по сайту
+            </label>
+            <input class="search__field" type="search" name="search" id="search" placeholder="Что ищем?">
+          </form>
+        </div>
+        <ul class="user-menu">
+          <li class="user-menu__item user-menu__item--login">
+            <a class="user-menu__link" href="#">Вход</a>
+          </li>
+        </ul>
+        <div class="cart">
+          <a class="cart__link" href="#">Пусто</a>
+        </div>
+      </div>
+      <p class="header-info">
+        С 10 до 20, ежедневно
+        <a class="header-info__phone" href="tel:+78124502525">
+          8&nbsp;812&nbsp;450-25-25
+        </a>
+      </p>
     </div>
-    <ul class="user-menu">
-      <li class="user-menu__item user-menu__item--login">
-        <a class="user-menu__link" href="#">Вход</a>
-      </li>
-    </ul>
-    <div class="cart">
-      <a class="cart__link--filled" href="#">2 товара</a>
-    </div>
-    <p class="info-block">
-      С 10 до 20, ежедневно
-      <span>
-        8 812 450-25-25
-      </span>
-    </p>
   </header>
 
   <main class="inner-content container">
@@ -142,7 +152,7 @@
       <ul class="products__list">
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-orange.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+            <img class="product__image" src="img/icecream-orange.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
           </a>
           <p class="product__price">310 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -152,7 +162,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-kofe-chokol.png" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
+            <img class="product__image" src="img/icecream-kofe-chokol.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="267" height="267">
           </a>
           <p class="product__price">380 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -162,7 +172,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-straw-choko-white.png" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267">
+            <img class="product__image" src="img/icecream-straw-choko-white.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="267" height="267">
           </a>
           <p class="product__price">355 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -172,7 +182,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-creme-brule-karamel.png" alt="Сливочное мороженое крем-брюле с карамельной подливкой" width="267" height="267">
+            <img class="product__image" src="img/icecream-creme-brule-karamel.jpg" alt="Сливочное мороженое крем-брюле с карамельной подливкой" width="267" height="267">
           </a>
           <p class="product__price">415 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -182,7 +192,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-ingonberry-jam.png" alt="Сливочное мороженое с брусничным джемом" width="267" height="267">
+            <img class="product__image" src="img/icecream-ingonberry-jam.jpg" alt="Сливочное мороженое с брусничным джемом" width="267" height="267">
           </a>
           <p class="product__price">325 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -192,7 +202,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-blueberry.png" alt="Сливочно-черничное мороженое с цельными ягодами черники" width="267" height="267">
+            <img class="product__image" src="img/icecream-blueberry.jpg" alt="Сливочно-черничное мороженое с цельными ягодами черники" width="267" height="267">
           </a>
           <p class="product__price">410 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -202,7 +212,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-lemon-karamel.png" alt="Сливочно-лимонное мороженое с карамельной присыпкой" width="267" height="267">
+            <img class="product__image" src="img/icecream-lemon-karamel.jpg" alt="Сливочно-лимонное мороженое с карамельной присыпкой" width="267" height="267">
           </a>
           <p class="product__price">375 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -212,7 +222,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-chokol.png" alt="Сливочное мороженое с шоколадной стружкой" width="267" height="267">
+            <img class="product__image" src="img/icecream-chokol.jpg" alt="Сливочное мороженое с шоколадной стружкой" width="267" height="267">
           </a>
           <p class="product__price">320 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -222,7 +232,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-vanile.png" alt="Сливочно-ванильное мороженое с кусочками шоколада" width="267" height="267">
+            <img class="product__image" src="img/icecream-vanile.jpg" alt="Сливочно-ванильное мороженое с кусочками шоколада" width="267" height="267">
           </a>
           <p class="product__price">440 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -232,7 +242,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-menthol.png" alt="Сливочноe мороженое с ментоловым сиропом" width="267" height="267">
+            <img class="product__image" src="img/icecream-menthol.jpg" alt="Сливочноe мороженое с ментоловым сиропом" width="267" height="267">
           </a>
           <p class="product__price">435 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -242,7 +252,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-chokol-piece.png" alt="Сливочное мороженое с кусочками черного шоколада" width="267" height="267">
+            <img class="product__image" src="img/icecream-chokol-piece.jpg" alt="Сливочное мороженое с кусочками черного шоколада" width="267" height="267">
           </a>
           <p class="product__price">355 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -252,7 +262,7 @@
         </li>
         <li class="products__item product">
           <a class="product__link" href="#">
-            <img class="product__image" src="img/icecream-mint.png" alt="Сливочное мороженое с мятным сиропом" width="267" height="267">
+            <img class="product__image" src="img/icecream-mint.jpg" alt="Сливочное мороженое с мятным сиропом" width="267" height="267">
           </a>
           <p class="product__price">420 ₽/<span>кг</span></p>
           <p class="product__description">
@@ -315,15 +325,6 @@
       <p class="htmlacademy__copyright">Сделано в HTML Academy © 2017</p>
     </section>
   </footer>
-
-  <section class="modal-search">
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label class="visually-hidden">
-        Поиск по сайту
-        <input class="search__field" type="search" placeholder="Что ищем?">
-      </label>
-    </form>
-  </section>
 
     <section class="modal-login">
     <form class="login" action="https://echo.htmlacademy.ru" method="post">
