@@ -579,6 +579,7 @@ body {
   /*margin: 0;*/
   /*padding: 20px;*/
   padding: 0 27px;
+  margin-bottom: 17px;
 }
 
 .advantages__wrapper {
@@ -639,15 +640,90 @@ body {
   background-image: url(../img/icon/termometr.svg);
 }
 
-                              /*Блок .blog*/
 
+.content-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 27px;
+  margin-bottom: 44px;
+}
+                              /*Блок .blog*/
+.blog {
+  width: 520px;
+  padding: 23px 20px;
+  border-radius: 15px;
+  background-image: url(../img/background/strawberry-background.jpg);
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.blog p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.blog__content {
+  width: 280px;
+}
+
+.blog a {
+  display: inline;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  background-image: linear-gradient(to top, #323232 2px, transparent 2px, transparent 100%);
+}
 
                               /*Блок .subscribe*/
 
 .subscribe {
+  display: flex;
   width: 560px;
+  border-radius: 15px;
+  background-image: repeating-linear-gradient( 135deg, 
+                                              #f8f7f4 0%,
+                                              #f8f7f4 10px,
+                                              #92cdff 10px,
+                                              #92cdff 20px,
+                                              #f8f7f4 20px, 
+                                              #f8f7f4 30px, 
+                                              #fe9e90 30px, 
+                                              #fe9e90 40px);
+
+}
+.subscribe-wrap {
+  margin: 5px;
+  padding: 30px 20px;
+  background-color: #f8f7f4;
+  
+  border-radius: 15px;
 }
 
+.subscribe__description {
+  margin: 0;
+  margin-bottom: 34px;
+  color: #323232;
+}
+
+.subscribe__form {
+  display: flex;
+  align-items: baseline;
+}
+
+.subscribe__form input {
+  flex-grow: 1;
+  padding: 10px 17px;
+  border: none;
+  border: 1px solid #d3d3d2;
+  border-radius: 7px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.subscribe__form .button {
+  margin-left: 12px;
+}
                               /*Блок .contacts*/
 
 .contacts {
