@@ -64,8 +64,7 @@ body {
 }
 
 /*Стили для кнопок*/
-.button,
-.button:visited {
+.button {
   padding: 10px 20px;
   border: none;
   border-radius: 25px;
@@ -378,8 +377,7 @@ body {
               /*Основной контент*/
 
 .main-content {
-  display: flex;
-  flex-wrap: wrap;
+
 }
 
                               /*Блок .slider*/
@@ -432,7 +430,7 @@ body {
 
 .promo-block {
   padding: 0 27px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .promo-block__list {
@@ -484,8 +482,9 @@ body {
 }
                               /*Блок .new-product*/
 
-.new-product {
+.popular {
    padding: 0 27px; 
+   margin-bottom: 37px;
   /* width: 1140px; */
 }
 
@@ -498,19 +497,39 @@ body {
   margin: 0;
 }
 
-.products__item {
+.product {
+  position: relative;
   width: 267px;
+  text-align: center;
 }
 
 .product__image {
   border-radius: 50%;
 }
 
+.product__link {
+  padding-bottom: 120px;
+}
+
+.product__link::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 61px;
+  height: 61px;
+  background-image: url(../img/icon/hit.svg);
+}
+
 .product__price {
   margin: 0;
   padding: 0;
+  margin-top: -64px;
+  margin-bottom: 21px;
   font-size: 45px;
   line-height: 45px;
+  text-align: start;
 }
 
 .product__price span {
@@ -530,25 +549,94 @@ body {
   /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
+.product__hover-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  margin-left: -11px;
+  padding-top: 350px;
+  width: 293px;
+  height: auto;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.product__hover-block .button {
+  margin-top: 300px;
+}
+
+.product__link:hover ~ .product__hover-block,
+.product__description:hover ~ .product__hover-block {
+  display: block;
+}
+
                               /*Блок .advantages*/
 
 .advantages {
   /*margin: 0;*/
   /*padding: 20px;*/
-  padding: 0 30px;
+  padding: 0 27px;
+}
+
+.advantages__wrapper {
+  padding: 25px 20px;
+  color: #323232;
+  border-radius: 15px;
+  background-image: url(../img/background/advantages.jpg);
+  background-repeat: repeat;
+}
+
+.advantages p {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .advantages__list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 .advantages__item {
-  width: 485px;
-  margin-bottom: 20px;
-  padding-left: 55px;
+  position: relative;
+  width: 482px;
+  margin-bottom: 22px;
+  /*margin-top: 25px;*/
+  padding-left: 56px;
+}
+
+.advantages__item::before {
+  position: absolute;
+  top: -13px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 49px;
+  height: 49px;
+}
+
+.advantages__item--devices::before {
+  background-image: url(../img/icon/icecream-icon.svg);
+}
+
+.advantages__item--milk::before {
+  background-image: url(../img/icon/leaf.svg);
+}
+
+.advantages__item--partners::before {
+  background-image: url(../img/icon/cow.svg);
+}
+
+.advantages__item--delivery::before {
+  background-image: url(../img/icon/termometr.svg);
 }
 
                               /*Блок .blog*/
